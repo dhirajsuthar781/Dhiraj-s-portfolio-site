@@ -1,0 +1,48 @@
+requirements ------
+
+- resume pdf
+
+
+website secionts -----
+
+- make a new like bar in home page  - like new launches things can be added
+
+
+
+# homepage
+- hero section
+- about me
+- Techstack
+- Project shocase any three and button of "More"
+- Skills  ---- later on we will add
+- Blogs any three ----
+- job expirence ----
+- hireme for project
+- contact  secitons ---
+- footer 
+-The Guestbook - leaving a message
+
+
+# about page -- completed
+- about us
+- contact us
+- footer
+
+
+
+# blogs page
+- all blogs 
+- properly configure for navbar and footer
+
+
+# project page
+- all project section 
+- downlaod source code option also
+- contact us
+- footer
+
+ 
+
+
+
+

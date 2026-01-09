@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+
+@theme inline {
+
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+
+  --font-sans: var(--font-geist-sans);
+  --font-inter: var(--font-inter);
+  --font-manrope: var(--font-manrope);
+  --font-nunito: var(--font-nunito);
+}
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.maxw {
+  @apply mx-auto  w-[90%] md:w-[86%];
+}
+
+/* Apply globally */
+* {
+  scrollbar-width: none;
+  /* Firefox */
+  scrollbar-color: #52525289 #ffffff00;
+  /* Firefox */
+}
+
+/* Remove arrows (increment/decrement buttons) */
+*::-webkit-scrollbar-button:single-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(56, 119, 207, 0);
+  /* Dark track */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+  /* Gray thumb */
+  border-radius: 9999px;
+
+  /* Space around thumb */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #6b7280;
+  /* Lighter on hover */
+}
+
+
+h2 {
+  @apply font-manrope font-medium  md:font-normal   text-2xl md:text-[38px] leading-[140%];
+}
+
+h1 {
+  @apply  text-4xl  md:text-[64px] font-medium font-manrope leading-[130%];
+}
+
+h4 {
+  @apply  text-[18px] md:text-[24px] font-manrope font-medium leading-[140%];
+}
+
+h5 {
+  @apply  text-[16px] md:text-[20px] font-manrope text-[#878787] leading-[140%];
+}
+
+h6 {
+  @apply font-manrope  text-[16px] md:text-[18px] text-[#878787] font-medium;
+}
+
+
+.ph1 {
+  @apply text-2xl font-manrope leading-[130%];
+}
+
+.elementstyleLight {
+  border-bottom-width: 1px;
+  border-color: rgb(232, 232, 232);
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 1px;
+  background: linear-gradient(180deg, var(--token-b242c080-773a-48fb-8a2b-8e8a2bb68741, rgb(255, 255, 255))
+    /* {"name":"White"} */
+    0%, rgb(255, 255, 255) 17.43602393033892%);
+  box-shadow: rgba(255, 255, 255, 0.18) 0px 0.602187px 1.08394px -1.25px, rgba(255, 255, 255, 0.16) 0px 2.28853px 4.11936px -2.5px, rgba(255, 255, 255, 0.063) 0px 10px 18px -3.75px, rgba(255, 255, 255, 0.5) 0px -0.722625px 1.01167px -0.833333px inset, rgba(255, 255, 255, 0.5) 0px -2.74624px 3.84474px -1.66667px inset, rgba(255, 255, 255, 0.5) 0px -12px 16.8px -2.5px inset;
+  opacity: 1;
+  border-radius: 16px;
+  will-change: auto;
+  cursor: pointer;
+  color: black;
+  height: min-content;
+  position: relative;
+  text-decoration: none;
+}
+
+.elementstyle {
+  border-bottom-width: 1px;
+  border-color: rgb(59, 59, 59);
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 1px;
+  background: linear-gradient(180deg, rgb(51, 51, 51) 0%, var(--token-9de46952-95e8-4761-8aa9-f667c662063c, rgb(21, 21, 21)) 17.43602393033892%);
+  border-radius: 16px;
+  box-shadow: rgba(59, 59, 59, 0.72) 0px 0.602187px 1.08394px -1.25px, rgba(59, 59, 59, 0.635) 0px 2.28853px 4.11936px -2.5px, rgba(59, 59, 59, 0.25) 0px 10px 18px -3.75px, rgba(163, 163, 163, 0.5) 0px -0.722625px 1.01167px -0.833333px inset, rgba(163, 163, 163, 0.5) 0px -2.74624px 3.84474px -1.66667px inset, rgba(163, 163, 163, 0.5) 0px -12px 16.8px -2.5px inset;
+  opacity: 1;
+  color: white;
+  cursor: pointer;
+  height: min-content;
+  position: relative;
+  text-decoration: none;
+
+}
+
+
+::selection {
+  background-color: #ff91f0;
+ 
+  color: white;              /* selected text color */
+}
+
+.imageEffect {
+  
+  background: linear-gradient(180deg, rgb(51, 51, 51) 0%, var(--token-9de46952-95e8-4761-8aa9-f667c662063c, rgb(21, 21, 21)) 17.43602393033892%);
+  box-shadow: rgba(59, 59, 59, 0.72) 0px 0.602187px 1.08394px -1.25px, rgba(59, 59, 59, 0.635) 0px 2.28853px 4.11936px -2.5px, rgba(59, 59, 59, 0.25) 0px 10px 18px -3.75px, rgba(163, 163, 163, 0.5) 0px -0.722625px 1.01167px -0.833333px inset, rgba(163, 163, 163, 0.5) 0px -2.74624px 3.84474px -1.66667px inset, rgba(163, 163, 163, 0.5) 0px -12px 16.8px -2.5px inset;
+}
